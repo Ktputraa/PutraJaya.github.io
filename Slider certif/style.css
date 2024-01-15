@@ -1,0 +1,155 @@
+header h1 {
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+main {
+    width: 800px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+.btn {
+    display: inline-block;
+    /*! background-color: white; */
+    padding: 8px 12px;
+   
+    border-radius: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+.heading_main h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.heading_main h2 span {
+    position: relative;
+    display: inline;
+}
+
+.heading_main h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+    bottom: -8px;
+    left: 0;
+}
+
+
+
+
+.hes-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.hes-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.hes-gallery img:hover {
+    transform: scale(1.04);
+    box-shadow: 9px 9px 10px #555;
+}
+
+h2 {
+
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-variant: small-caps;
+    text-align: left;
+    color: #000000;
+
+}
+
+
+.certification-mf .heading_main h1 {
+    text-align: left;
+    font-size: 25px;
+    color: #000000;
+    margin-left: 0;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.certification-mf .heading_main h1 span {
+    position: relative;
+}
+
+.certification-mf .heading_main h1 span:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+    display: block;
+}
+
+
+
+
+
+.heading_main h1 {
+    text-align: center;
+}
+
+.heading_main h1 span {
+    padding-bottom: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .certification-mf .heading_main h1 {
+        font-size: 24px;
+        margin-left: 0;
+    }
+}
+
+
+
+body {
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    main {
+        width: 100%;
+    }
+
+    header img {
+        width: 80%;
+        object-fit: contain;
+    }
+
+    .hes-gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .hes-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
